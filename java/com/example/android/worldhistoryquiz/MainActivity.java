@@ -16,10 +16,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startQuiz(View view){
-       String name  = nameField.getText().toString();
         Intent intent = new Intent(this, StartQuiz.class);
         startActivity(intent);
 
+    }
+    public String getName(){
+        String name  = nameField.getText().toString();
+        return name;
     }
     public void quitQuiz(View view){
 
